@@ -1,0 +1,31 @@
+.main-container{
+    background-color: hsl(0, 100%, 74%);
+    height: 100vh;
+    background-image: url("../assets/img/bg-intro-desktop.png");
+    background-size: cover;
+    margin: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 48vw 48vw;
+    grid-template-rows: 15vh 60vh 15vh; 
+    column-gap: 4vw;
+    row-gap: 5vh;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    justify-items: right;
+    align-items: center;
+    margin: 0;
+    padding:0;
+    padding-left: 7vw;
+}
+
+
+.container2{
+    display: grid;
+    justify-items: left;
+}

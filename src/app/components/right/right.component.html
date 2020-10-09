@@ -1,0 +1,56 @@
+<div>
+  <div class="box">
+    <p><span>Try it free 7 days </span>then $20/mo. thereafter</p>
+  </div>
+
+  <form class="boxform" [formGroup]="registerForm" (ngSubmit)="register()">
+
+
+    <div class="form-group">
+
+      <div class="subbox">
+      <input id="firstname" class="form-control" [ngClass]="{'is-invalid': registerForm.get('firstname').touched && registerForm.get('firstname').invalid}" formControlName="firstname" placeholder="First Name"  />
+      <div class="invalid-feedback">
+        First Name cannot be empty
+      </div>
+      </div>
+
+      <div class="subbox">
+      <input id="lastname" class="form-control"
+        [ngClass]="{'is-invalid': registerForm.get('lastname').touched && registerForm.get('lastname').invalid}"
+        formControlName="lastname" placeholder="Last Name" />
+      <div class="invalid-feedback">
+        Last Name cannot be empty
+      </div>
+    </div>
+
+      <div class="subbox">
+      <input id="email" class="form-control"
+        [ngClass]="{'is-invalid': registerForm.get('email').touched && registerForm.get('email').invalid}"
+        formControlName="email" placeholder="Email" />
+      <div class="invalid-feedback">
+        Looks like this is not an email
+      </div>
+    </div>
+
+
+      <div class="subbox">
+      <input id="password" class="form-control"
+        [ngClass]="{'is-invalid': registerForm.get('password').touched && registerForm.get('password').invalid}"
+        formControlName="password" placeholder="Password" />
+      <div class="invalid-feedback">
+        Password cannot be empty
+      </div>
+    </div>
+
+   
+
+
+    <button type="submit" class="btn">Claim your free trial</button>
+    <p class="subtext">By clicking the buton, you are agreeing to our <span>Terms and Services</span></p>
+
+  </div>
+  </form>
+
+
+</div>
